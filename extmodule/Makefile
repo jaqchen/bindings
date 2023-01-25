@@ -14,7 +14,7 @@ libextm.so: extmodule.o
 	$(CC) -shared -o $@ -Wl,-soname=$@ $^
 
 %.o: %.c extmodule.h
-	$(CC) -c $(CFLAGS) -o $@ $<
+	$(CC) -c -fPIC $(CFLAGS) -o $@ $<
 
 clean:
 	rm -rf *.o $(TARGETS)
