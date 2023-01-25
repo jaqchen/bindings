@@ -8,4 +8,4 @@ edition = "2021"
 [dependencies]
 
 [build-dependencies]
-bindgen = "0.62.0"
+libc = { version = "0.2.139" }
